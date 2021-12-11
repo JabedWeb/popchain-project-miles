@@ -1,0 +1,409 @@
+/* ================
+defaul custom css start
+================ */
+* {
+    margin: 0;
+    padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li {
+    font-family: 'Poppins', sans-serif;
+}
+body,
+html {
+    line-height: 1.6;
+    font-size: 18px;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.grey-bg {
+    background-color: #f9fafb;
+}
+
+.main-header .container-fluid {
+    max-width: 1480px;
+}
+:root {
+    --main-primary: #cad6fd;
+    --main-secondary: #000000;
+    --bc-white: #ffffff;
+    --bc-footer: #d9f84c;
+}
+
+.container {
+    max-width: 1124px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* ================
+defaul css end
+================ */
+
+/* ======================
+header-top css start */
+header {
+    position: relative;
+    background-image: url("./image/Picture4ms\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left {
+    width: 300px;
+}
+.header-left .logo {
+    width: 181px;
+}
+.header-right {
+    width: 600px;
+    margin-left: 5%;
+    text-align: right;
+}
+.header-right span {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+.header-nft-price {
+    display: flex;
+    background: white;
+    width: 190px;
+    align-items: center;
+    border: 3px solid #000;
+}
+.header-nft-price img {
+    width: 20px;
+}
+
+/* bottombar css code  */
+
+.bottom-bar {
+    background-color: var(--main-secondary);
+}
+.bottom-bar h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* nft custom css */
+
+.main-nft {
+    padding: 40px 0;
+    background-color: var(--main-primary);
+    position: relative;
+    z-index: -99;
+}
+.nft-layout {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.nft-item {
+    position: relative;
+}
+.nft-item .nft-inner {
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(3, 0, 16, 0.2);
+    border: 4px solid #000;
+}
+
+.nft-item::after,
+.nft-item::before {
+    background: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nft-item::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    box-shadow: 0 0 10px rgba(3, 0, 16, 0.2);
+    bottom: -12px;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    background: #ffffff;
+}
+
+.nft-item::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    box-shadow: 0 0 10px rgba(3, 0, 16, 0.2);
+    bottom: -22px;
+    left: 50%;
+    z-index: -2;
+    transform: translateX(-50%);
+    background: #ffffff;
+}
+.nft-item {
+    width: 250px;
+    margin-top: 30px;
+}
+
+.nft-grid {
+    text-align: center;
+}
+.nft-grid h3 {
+    font-size: 14px;
+}
+.nft-grid .nft-grid-image img {
+    border-bottom: 5px solid #000;
+}
+.price-nft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price-nft .price-img {
+    width: 30px;
+}
+.price-nft .price-img img {
+}
+.price-nft .price-amount {
+}
+.price-nft .price-amount h4 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/* footer custom css start */
+
+footer {
+    background-color: var(--bc-footer);
+    padding: 50px 0;
+    padding-top: 80px;
+}
+footer .footer-layout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .footer-layout .footer-left {
+    width: 50%;
+}
+footer .footer-layout .footer-left h2 {
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+footer .footer-layout .footer-left p {
+}
+footer .footer-layout .footer-left span {
+    color: #000;
+    font-weight: 600;
+}
+footer .footer-layout .footer-left span a {
+    color: #000 !important;
+    font-weight: 600;
+}
+footer .footer-layout .footer-right {
+    width: 50%;
+    position: relative;
+}
+footer .footer-layout .footer-right .euro {
+    background: #cad6fd;
+    text-align: center;
+    width: 60%;
+    padding: 15px 20px;
+    margin: auto;
+    position: relative;
+    transform: skewY(-2deg);
+    z-index: 99;
+}
+footer .footer-layout .footer-right .euro span {
+    color: #000;
+    font-weight: 700;
+}
+footer .footer-layout .footer-right .euro span a {
+    color: #000;
+}
+footer .footer-layout .footer-right .social {
+    background: #ff66c4;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding: 15px 20px;
+    position: relative;
+    left: 40px;
+    /* transform: skewY(-5deg); */
+}
+footer .footer-layout .footer-right .social h3 {
+    color: #fff;
+}
+footer .footer-layout .footer-right .social ul li {
+}
+footer .footer-layout .footer-right .social ul li a {
+    color: #fff;
+    font-weight: 600;
+}
+footer .footer-layout .footer-right .analytics {
+    background: #8c52ff;
+    text-align: center;
+    width: 60%;
+    padding: 15px 20px;
+    margin: auto;
+    position: relative;
+    transform: skewY(2deg);
+}
+footer .footer-layout .footer-right .analytics span {
+    color: #fff;
+    font-weight: 700;
+}
+footer .footer-layout .footer-right .analytics span a {
+    color: #fff;
+}
+footer .footer-layout .footer-right span {
+}
+
+/* circle-style-customcss */
+/* first -left 5 circle */
+
+.footer-left {
+    position: relative;
+}
+.footer-left::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -18%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1;
+    background: #011c50;
+}
+.footer-left::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -16%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1;
+    background: #cad6fd;
+}
+
+footer .footer-layout .footer-left span {
+    position: relative;
+}
+
+footer .footer-layout .footer-left span::before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1;
+    background: #ff66c4;
+}
+
+footer .footer-layout .footer-left h2 {
+    position: relative;
+}
+footer .footer-layout .footer-left h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1;
+    background: #011c50;
+}
+footer .footer-layout .footer-left h2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1;
+    background: #ff66c4;
+}
+
+/* circle-style-customcss */
+/* first -right 4 circle */
+
+.footer-right {
+    position: relative;
+}
+.footer-right::after {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1;
+    background: #cad6fd;
+}
+.footer-right::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1;
+    background: #ff66c4;
+}
+
+footer .footer-layout .footer-right .analytics::before {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1;
+    background: #ff66c4;
+}
+
+footer .footer-layout .footer-right .social::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: -80px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1;
+    background: #8c52ff;
+}

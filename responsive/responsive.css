@@ -1,0 +1,63 @@
+@media all and (min-width: 576px) {
+    .header-right span {
+        font-size: 44px;
+    }
+    .header-left h3 {
+        font-size: 14px;
+    }
+}
+@media all and (min-width: 768px) {
+    .header-right span {
+        font-size: 60px;
+    }
+    .nft-item {
+        width: 24%;
+    }
+    .nft-grid h3 {
+        font-size: 14px;
+    }
+    .header-left h3 {
+        font-size: 20px;
+    }
+}
+@media all and (min-width: 992px) {
+    .header-right span {
+        font-size: 70px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .nft-grid h3 {
+        font-size: 21px;
+    }
+    .header-right span {
+        font-size: 70px;
+    }
+}
+
+@media all and (max-width: 900px) and (min-width: 576px) {
+    .header-left h3 {
+        font-size: 17px;
+    }
+
+    footer .footer-layout .footer-left h2 {
+        font-size: 60px;
+    }
+    footer .footer-layout .footer-right .euro {
+        width: 46%;
+        padding: 5px 20px;
+    }
+    footer .footer-layout .footer-right .social  {
+        width: 60%;
+        padding: 5px 20px;
+    }
+    footer .footer-layout .footer-right .analytics  {
+        width: 46%;
+        padding: 5px 20px;
+    }
+    footer .footer-layout .footer-right span {
+        font-size: 13px;
+    }
+    footer .footer-layout .footer-right .social ul li a {
+        font-size: 13px;
+    }
+}
